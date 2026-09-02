@@ -411,11 +411,6 @@ a {
   transition: all 0.3s ease;
 }
 
-.impact-button {
-  background: var(--white);
-  color: var(--dark-green);
-}
-
 .impact-button:hover {
   background: var(--blue);
   color: var(--white);
