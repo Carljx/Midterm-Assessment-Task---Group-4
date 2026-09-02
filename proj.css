@@ -14,12 +14,6 @@
   box-sizing: border-box;
 }
 
-html, body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden !important;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -28,6 +22,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--dark-green);
   background: var(--white);
+  overflow-x: hidden;
 }
 
 a {
@@ -165,7 +160,6 @@ a {
 
 .hero-image-container {
   position: relative;
-  overflow: hidden;
 }
 
 .hero-image-wrapper {
@@ -189,7 +183,7 @@ a {
   background: var(--light-green);
   border-radius: 50%;
   right: 0;
-  top: 0;
+  top: -20px;
   z-index: 1;
 }
 
@@ -210,7 +204,6 @@ a {
 
 .about-image-wrapper {
   position: relative;
-  overflow: hidden;
 }
 
 .about-image {
@@ -221,8 +214,8 @@ a {
 
 .about-badge {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: -25px;
+  left: 0;
   background: var(--dark-green);
   color: var(--white);
   padding: 18px 22px;
@@ -414,6 +407,11 @@ a {
   font-weight: 700;
   border: none;
   transition: all 0.3s ease;
+}
+
+.impact-button {
+  background: var(--white);
+  color: var(--dark-green);
 }
 
 .impact-button:hover {
@@ -804,6 +802,7 @@ a {
 
 .card-img-wrapper {
   position: relative;
+  height: 180px;
 }
 
 .card-img-wrapper img {
@@ -1389,7 +1388,7 @@ a {
   height: 110px;
 
   right: 0;
-  bottom: 0;
+  bottom: -50px;
 
   background: var(--light-green);
 
